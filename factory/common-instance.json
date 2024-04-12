@@ -1,0 +1,9 @@
+{
+	"name": "common-instance",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4e7b588d-2f6e-4a82-8802-31f05c6c45b2",
+		"tenantId": "b8ab758a-8bc6-4cea-b0c5-504aa5f00246"
+	}
+}

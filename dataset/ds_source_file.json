@@ -1,0 +1,28 @@
+{
+	"name": "ds_source_file",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_common_storage",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"fileName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().fileName",
+					"type": "Expression"
+				},
+				"folderPath": "hollywood",
+				"container": "container"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
